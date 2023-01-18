@@ -1,0 +1,132 @@
+---
+title: Tailwind CSS Switch for React - Material Tailwind
+description: Customise your web projects with our easy-to-use switch component for Tailwind CSS and React using Material Design guidelines.
+navigation:
+  [
+    "switch",
+    "switch-colors",
+    "switch-with-label",
+    "switch-ripple-effect",
+    "props",
+    "theme",
+  ]
+related:
+  [
+    {
+      title: "Props",
+      route: "props/switch",
+      description: "Learn more about props definition and types of switch component.",
+    },
+    {
+      title: "Theme",
+      route: "theme/switch",
+      description: "Learn how to customize the theme and styles for switch component.",
+    },
+  ]
+github: switch
+prev: select
+next: tabs
+---
+
+# Tailwind CSS Switch - React
+
+Use our Tailwind CSS <Code>Switch</Code> component to let users adjust settings on/off. The option that the <Code>Switch</Code> controls, as well as the state it's in, should be made clear from the corresponding inline label.
+
+See below our example that will help you create simple and easy-to-use <Code>Switch</Code> component for your Tailwind CSS and React project.
+
+<br />
+
+<ComponentDemo id="switch">
+  <Switch id="switch-component" defaultChecked />
+</ComponentDemo>
+
+```jsx
+import { Switch } from "@material-tailwind/react";
+
+export default function Example() {
+  return <Switch defaultChecked />;
+}
+```
+
+---
+
+## Switch Colors
+
+The <Code>Switch</Code> component comes with 19 different colors that you can change it using the <Code>color</Code> prop, below there are some examples of the colors but you can check all of the them [here.](#props)
+
+<ComponentDemo id="switch-colors">
+  <div className="flex w-max gap-4">
+    <Switch id="switch-1" color="blue" defaultChecked />
+    <Switch id="switch-2" color="red" defaultChecked />
+    <Switch id="switch-3" color="green" defaultChecked />
+    <Switch id="switch-4" color="amber" defaultChecked />
+    <Switch id="switch-5" color="teal" defaultChecked />
+    <Switch id="switch-6" color="indigo" defaultChecked />
+    <Switch id="switch-7" color="purple" defaultChecked />
+    <Switch id="switch-8" color="pink" defaultChecked />
+  </div>
+</ComponentDemo>
+
+```jsx
+import { Switch } from "@material-tailwind/react";
+
+export default function Colors() {
+  return (
+    <div className="flex w-max gap-4">
+      <Switch id="blue" color="blue" defaultChecked />
+      <Switch id="red" color="red" defaultChecked />
+      <Switch id="green" color="green" defaultChecked />
+      <Switch id="amber" color="amber" defaultChecked />
+      <Switch id="teal" color="teal" defaultChecked />
+      <Switch id="indigo" color="indigo" defaultChecked />
+      <Switch id="purple" color="purple" defaultChecked />
+      <Switch id="pink" color="pink" defaultChecked />
+    </div>
+  );
+}
+```
+
+---
+
+## Switch with Label
+
+You can add a label for the <Code>Switch</Code> component by passing the <Code>label</Code> prop to the <Code>Switch</Code> component.
+
+<ComponentDemo id="switch-with-label">
+  <Switch id="auto-update" label="Automatic Update" />
+</ComponentDemo>
+
+```jsx
+import { Switch } from "@material-tailwind/react";
+
+export default function Example() {
+  return <Switch id="auto-update" label="Automatic Update" />;
+}
+```
+
+---
+
+## Switch Ripple Effect
+
+You can turn on/off the ripple effect for the <Code>Switch</Code> component using the <Code>ripple</Code> prop.
+
+<ComponentDemo id="switch-ripple-effect">
+  <Switch id="ripple-on" label="Ripple Effect On" />
+  <Switch id="ripple-off" label="Ripple Effect Off" ripple={false} />
+</ComponentDemo>
+
+```jsx
+import { Switch } from "@material-tailwind/react";
+
+export default function Example() {
+  return (
+    <div className="space-x-8">
+      <Switch id="ripple-on" label="Ripple Effect On" ripple={true} />
+      <Switch id="ripple-off" label="Ripple Effect Off" ripple={false} />
+    </div>
+  );
+}
+```
+
+<span id="props" className="scroll-mt-48" />
+<span id="theme" className="scroll-mt-48" />

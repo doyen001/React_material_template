@@ -1,0 +1,242 @@
+---
+title: Tailwind CSS Icon Button for React - Material Tailwind
+description: Customise your web projects with our easy-to-use icon button component for Tailwind CSS and React using Material Design guidelines.
+navigation:
+  [
+    "icon-button",
+    "icon-button-variants",
+    "icon-button-sizes",
+    "icon-button-colors",
+    "icon-button-ripple-effect",
+    "font-awesome-cdn-link",
+    "props",
+    "theme",
+  ]
+related:
+  [
+    {
+      title: "Props",
+      route: "props/icon-button",
+      description: "Learn more about props definition and types of icon button component.",
+    },
+    {
+      title: "Theme",
+      route: "theme/icon-button",
+      description: "Learn how to customize the theme and styles for icon button component.",
+    },
+  ]
+github: icon-button
+prev: dialog
+next: input
+---
+
+# Tailwind CSS Icon Button - React
+
+Use this example to create user-friendly buttons with icon for your Tailwind CSS and React project.
+
+<br />
+
+<ComponentDemo id="icon-button">
+  <IconButton>
+    <i className="fas fa-heart" />
+  </IconButton>
+</ComponentDemo>
+
+```jsx
+import { IconButton } from "@material-tailwind/react";
+
+export default function Example() {
+  return (
+    <IconButton>
+      <i className="fas fa-heart" />
+    </IconButton>
+  );
+}
+```
+
+---
+
+## Icon Button Variants
+
+The <Code>IconButton</Code> component comes with 4 different variants that you can change it using the <Code>variant</Code> prop.
+
+<ComponentDemo id="icon-button-variants">
+  <div className="flex gap-4">
+    <IconButton>
+      <i className="fas fa-heart" />
+    </IconButton>
+    <IconButton variant="gradient">
+      <i className="fas fa-heart" />
+    </IconButton>
+    <IconButton variant="outlined">
+      <i className="fas fa-heart" />
+    </IconButton>
+    <IconButton variant="text">
+      <i className="fas fa-heart" />
+    </IconButton>
+  </div>
+</ComponentDemo>
+
+```jsx
+import { IconButton } from "@material-tailwind/react";
+
+export default function Variants() {
+  return (
+    <div className="flex gap-4">
+      <IconButton>
+        <i className="fas fa-heart" />
+      </IconButton>
+      <IconButton variant="gradient">
+        <i className="fas fa-heart" />
+      </IconButton>
+      <IconButton variant="outlined">
+        <i className="fas fa-heart" />
+      </IconButton>
+      <IconButton variant="text">
+        <i className="fas fa-heart" />
+      </IconButton>
+    </div>
+  );
+}
+```
+
+---
+
+## Icon Button Sizes
+
+The <Code>IconButton</Code> component comes with 3 different sizes that you can change it using the <Code>size</Code> prop.
+
+<ComponentDemo id="icon-button-sizes">
+  <div className="flex items-end gap-4">
+    <IconButton size="sm">
+      <i className="fas fa-heart" />
+    </IconButton>
+    <IconButton>
+      <i className="fas fa-heart" />
+    </IconButton>
+    <IconButton size="lg">
+      <i className="fas fa-heart fa-lg" />
+    </IconButton>
+  </div>
+</ComponentDemo>
+
+```jsx
+import { IconButton } from "@material-tailwind/react";
+
+export default function Sizes() {
+  return (
+    <div className="flex items-end gap-4">
+      <IconButton size="sm">
+        <i className="fas fa-heart" />
+      </IconButton>
+      <IconButton size="md">
+        <i className="fas fa-heart" />
+      </IconButton>
+      <IconButton size="lg">
+        <i className="fas fa-heart fa-lg" />
+      </IconButton>
+    </div>
+  );
+}
+```
+
+---
+
+## Icon Button Colors
+
+The <Code>IconButton</Code> component comes with 19 different colors that you can change it using the <Code>color</Code> prop, below there are some examples of the colors but you can check all of the them [here.](#props)
+
+<ComponentDemo id="icon-button-colors">
+  <div className="flex gap-4">
+    <IconButton color="blue">
+      <i className="fas fa-heart" />
+    </IconButton>
+    <IconButton color="red">
+      <i className="fas fa-heart" />
+    </IconButton>
+    <IconButton color="green">
+      <i className="fas fa-heart" />
+    </IconButton>
+    <IconButton color="amber">
+      <i className="fas fa-heart" />
+    </IconButton>
+  </div>
+</ComponentDemo>
+
+```jsx
+import { IconButton } from "@material-tailwind/react";
+
+export default function Colors() {
+  return (
+    <div className="flex gap-4">
+      <IconButton color="blue">
+        <i className="fas fa-heart" />
+      </IconButton>
+      <IconButton color="red">
+        <i className="fas fa-heart" />
+      </IconButton>
+      <IconButton color="green">
+        <i className="fas fa-heart" />
+      </IconButton>
+      <IconButton color="amber">
+        <i className="fas fa-heart" />
+      </IconButton>
+    </div>
+  );
+}
+```
+
+---
+
+## Icon Button Ripple Effect
+
+You can turn on/off the ripple effect for the <Code>IconButton</Code> component using the <Code>ripple</Code> prop.
+
+<ComponentDemo id="icon-button-ripple-effect">
+  <div className="flex w-max gap-4">
+    <IconButton ripple={true}>
+      <i className="fas fa-heart" />
+    </IconButton>
+    <IconButton ripple={false}>
+      <i className="fas fa-heart" />
+    </IconButton>
+  </div>
+</ComponentDemo>
+
+```jsx
+import { IconButton } from "@material-tailwind/react";
+
+export default function Example() {
+  return (
+    <div className="flex w-max gap-4">
+      <IconButton ripple={true}>
+        <i className="fas fa-heart" />
+      </IconButton>
+      <IconButton ripple={false}>
+        <i className="fas fa-heart" />
+      </IconButton>
+    </div>
+  );
+}
+```
+
+---
+
+## Font Awesome CDN Link
+
+In case of using icon fonts rather than svg icons please add their cdn links to your project, if you're using font awesome you can use the below cdn link.
+
+<div id="font-awesome-cdn-link" />
+
+```jsx
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+```
+
+<span id="props" className="scroll-mt-48" />
+<span id="theme" className="scroll-mt-48" />

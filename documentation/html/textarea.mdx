@@ -1,0 +1,91 @@
+---
+title: Tailwind CSS Textarea - Material Tailwind
+description: Customise your web projects with our easy-to-use Textarea component for Tailwind CSS using Material Design guidelines.
+navigation:
+  ["textarea-outline", "textarea-dynamic", "textarea-static", "required-script"]
+github: textarea
+prev: tabs
+next: tooltip
+---
+
+# Tailwind CSS
+
+Easily create textarea with different styles using our component based on Tailwind CSS. It is useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form.
+
+Below we are presenting 3 examples of textarea components that you can use in your Tailwind CSS project.
+
+<br />
+
+## Textarea Outline
+
+Use this example to create outline textarea components.
+
+<ComponentDemo id="textarea-outline">
+  <div className="input-group input-group-outline mb-6">
+    <label className="form-label">Textarea Outline</label>
+    <textarea type="text" className="form-control" rows="7"></textarea>
+  </div>
+</ComponentDemo>
+
+```html
+<div class="input-group input-group-outline mb-6">
+  <label class="form-label">Textarea Outline</label>
+  <textarea type="text" class="form-control" rows="7"></textarea>
+</div>
+```
+
+---
+
+## Textarea Dynamic
+
+Use this example to create dynamic textarea components.
+
+<ComponentDemo id="textarea-dynamic">
+  <div className="input-group input-group-dynamic mb-6">
+    <label className="form-label">Textarea Dynamic</label>
+    <textarea type="text" className="form-control" rows="7"></textarea>
+  </div>
+</ComponentDemo>
+
+```html
+<div class="input-group input-group-dynamic mb-6">
+  <label class="form-label">Textarea Dynamic</label>
+  <textarea type="text" class="form-control" rows="7"></textarea>
+</div>
+```
+
+---
+
+## Textarea Static
+
+Use this example to create static textarea components.
+
+<ComponentDemo id="textarea-static">
+  <div className="input-group input-group-static mb-6">
+    <label>Textarea Static</label>
+    <textarea type="text" className="form-control" rows="7"></textarea>
+  </div>
+</ComponentDemo>
+
+```html
+<div class="input-group input-group-static mb-6">
+  <label>Textarea Static</label>
+  <textarea type="text" class="form-control" rows="7"></textarea>
+</div>
+```
+
+---
+
+## Required Scrips
+
+<span id="required-script" className="scroll-mt-56" />
+
+The textarea component needs a required script files to work, you just need to add the below script file to the bottom of your html file.
+
+```html
+<!-- from node_modules -->
+<script src="node_modules/@material-tailwind/html/scripts/input.js"></script>
+
+<!-- from cdn -->
+<script src="https://unpkg.com/@material-tailwind/html@latest/scripts/input.js"></script>
+```

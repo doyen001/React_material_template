@@ -1,0 +1,244 @@
+---
+title: Tailwind CSS Button - Material Tailwind
+description: Customise your web projects with our easy-to-use Buttons component for Tailwind CSS using Material Design guidelines.
+navigation:
+  [
+    "button",
+    "button-variants",
+    "simple-buttons",
+    "button-with-gradient",
+    "button-sizes",
+  ]
+github: button
+prev: breadcrumbs
+next: card
+---
+
+# Tailwind CSS Button
+
+Use our buttons based on Tailwind CSS for actions in forms, dialogues, and more with support for multiple sizes, states, and more.
+
+Buttons are an essential element of web design. Basically, buttons are styled links that grab the user's attention. They help users navigate our websites or apps and drive them to a particular action like submitting a contact form, or placing an order as easily as possible.
+
+See below our button components examples.
+
+<ComponentDemo id="button">
+  <button className="button button-pink" data-ripple-light="true">
+    {`Button`}
+  </button>
+</ComponentDemo>
+```html
+<button class="button button-pink" data-ripple-light="true">
+  Button
+</button>
+```
+
+---
+
+## Button Variants
+
+See our button examples below. They come in different styles and color.
+
+<ComponentDemo id="button-variants">
+  <div className="flex items-center">
+    <button className="button button-pink mr-3" data-ripple-light="true">
+      {`Button`}
+    </button>
+    <button
+      className="button button-gradient button-pink mr-3"
+      data-ripple-light="true"
+    >
+      {`Button`}
+    </button>
+    <button
+      className="button button-outlined button-pink mr-3"
+      data-ripple-dark="true"
+    >
+      {`Button`}
+    </button>
+    <button
+      className="button button-text button-pink mr-3"
+      data-ripple-dark="true"
+    >
+      {`Button`}
+    </button>
+    <button className="button button-icon button-pink" data-ripple-light="true">
+      <i className="material-icons">dashboard</i>
+    </button>
+  </div>
+</ComponentDemo>
+
+```html
+<button class="button button-pink mr-3" data-ripple-light="true">Button</button>
+<button
+  class="button button-gradient button-pink mr-3"
+  data-ripple-light="true"
+>
+  Button
+</button>
+<button class="button button-outlined button-pink mr-3" data-ripple-dark="true">
+  Button
+</button>
+<button class="button button-text button-pink mr-3" data-ripple-dark="true">
+  Button
+</button>
+<button class="button button-icon button-pink" data-ripple-light="true">
+  <i class="material-icons">dashboard</i>
+</button>
+```
+
+---
+
+### Simple Buttons
+
+Use this example to create a simple button element for your Tailwind CSS project.
+
+<ComponentDemo id="simple-buttons">
+  <div className="flex">
+    <button className="button button-pink mr-3" data-ripple-light="true">
+      {`Button`}
+    </button>
+    <button className="button button-secondary mr-3" data-ripple-light="true">
+      {`Button`}
+    </button>
+    <button className="button button-green mr-3" data-ripple-light="true">
+      {`Button`}
+    </button>
+    <button className="button button-orange mr-3" data-ripple-light="true">
+      {`Button`}
+    </button>
+    <button className="button button-red mr-3" data-ripple-light="true">
+      {`Button`}
+    </button>
+    <button className="button button-dark mr-3" data-ripple-light="true">
+      {`Button`}
+    </button>
+  </div>
+</ComponentDemo>
+
+```html
+<button class="button button-pink" data-ripple-light="true">Button</button>
+<button class="button button-secondary" data-ripple-light="true">Button</button>
+<button class="button button-green" data-ripple-light="true">Button</button>
+<button class="button button-orange" data-ripple-light="true">Button</button>
+<button class="button button-red" data-ripple-light="true">Button</button>
+<button class="button button-dark" data-ripple-light="true">Button</button>
+```
+
+---
+
+### Buttons with Gradients
+
+Use this example to create a simple button element with gradient for your Tailwind CSS project.
+
+<ComponentDemo id="buttons-with-gradient">
+  <div className="flex">
+    <button
+      className="button button-gradient button-pink mr-3"
+      data-ripple-light="true"
+    >
+      {`Button`}
+    </button>
+    <button
+      className="button button-gradient button-secondary mr-3"
+      data-ripple-light="true"
+    >
+      {`Button`}
+    </button>
+    <button
+      className="button button-gradient button-green mr-3"
+      data-ripple-light="true"
+    >
+      {`Button`}
+    </button>
+    <button
+      className="button button-gradient button-orange mr-3"
+      data-ripple-light="true"
+    >
+      {`Button`}
+    </button>
+    <button
+      className="button button-gradient button-red mr-3"
+      data-ripple-light="true"
+    >
+      {`Button`}
+    </button>
+    <button
+      className="button button-gradient button-dark mr-3"
+      data-ripple-light="true"
+    >
+      {`Button`}
+    </button>
+  </div>
+</ComponentDemo>
+
+```html
+<button class="button button-gradient button-pink" data-ripple-light="true">
+  Button
+</button>
+<button
+  class="button button-gradient button-secondary"
+  data-ripple-light="true"
+>
+  Button
+</button>
+<button class="button button-gradient button-green" data-ripple-light="true">
+  Button
+</button>
+<button class="button button-gradient button-orange" data-ripple-light="true">
+  Button
+</button>
+<button class="button button-gradient button-red" data-ripple-light="true">
+  Button
+</button>
+<button class="button button-gradient button-dark" data-ripple-light="true">
+  Button
+</button>
+```
+
+---
+
+### Button Sizes
+
+Use this example to create buttons in different sizes.
+
+<ComponentDemo id="buttons-with-gradient">
+  <button
+    className="button button-gradient button-pink button-sm mb-3"
+    data-ripple-light="true"
+  >
+    {`Button`}
+  </button>
+  <button
+    className="button button-gradient button-pink mb-3"
+    data-ripple-light="true"
+  >
+    {`Button`}
+  </button>
+  <button
+    className="button button-gradient button-pink button-lg mb-3"
+    data-ripple-light="true"
+  >
+    {`Button`}
+  </button>
+</ComponentDemo>
+```html
+<button
+  class="button button-gradient button-pink button-sm mb-3"
+  data-ripple-light="true"
+>
+  Button
+</button>
+<button
+  class="button button-gradient button-pink mb-3"
+  data-ripple-light="true"
+>
+  Button
+</button>
+<button
+  class="button button-gradient button-pink button-lg mb-3"
+  data-ripple-light="true"
+>
+  Button
+</button>
+```

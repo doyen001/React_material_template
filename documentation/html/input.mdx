@@ -1,0 +1,91 @@
+---
+title: Tailwind CSS Input - Material Tailwind
+description: Customise your web projects with our beautiful Input component for Tailwind CSS using Material Design guidelines.
+navigation:
+  ["input-outline", "input-dynamic", "input-static", "required-script"]
+github: input
+prev: icon-button
+next: menu
+---
+
+# Tailwind CSS Input
+
+Easily create inputs with different status and sizes using our components based on Tailwind CSS.
+
+<br />
+<br />
+<br />
+
+## Input Outline
+
+Use this example to create outline input components.
+
+<ComponentDemo id="input-outline">
+  <div className="input-group input-group-outline w-1/2">
+    <label className="form-label">Outline</label>
+    <input type="text" className="form-control" />
+  </div>
+</ComponentDemo>
+
+```html
+<div class="input-group input-group-outline">
+  <label class="form-label">Outline</label>
+  <input type="text" class="form-control" />
+</div>
+```
+
+---
+
+## Input Dynamic
+
+Use this example to create easy-to-use dynamic input components.
+
+<ComponentDemo id="input-dynamic">
+  <div className="input-group input-group-dynamic w-1/2">
+    <label className="form-label">Dynamic</label>
+    <input type="text" className="form-control" />
+  </div>
+</ComponentDemo>
+
+```html
+<div class="input-group input-group-dynamic">
+  <label class="form-label">Dynamic</label>
+  <input type="text" class="form-control" />
+</div>
+```
+
+---
+
+## Input Static
+
+Use this example to create simple and versatile input components for your Tailwind CSS projects.
+
+<ComponentDemo id="input-static">
+  <div className="input-group input-group-static w-1/2">
+    <label>Static</label>
+    <input type="text" className="form-control" />
+  </div>
+</ComponentDemo>
+
+```html
+<div class="input-group input-group-static">
+  <label>Static</label>
+  <input type="text" class="form-control" />
+</div>
+```
+
+---
+
+## Required Scrips
+
+<span id="required-script" className="scroll-mt-56" />
+
+The input component needs a required script file to work, you just need to add the below script file to the bottom of your html file.
+
+```html
+<!-- from node_modules -->
+<script src="node_modules/@material-tailwind/html/scripts/input.js"></script>
+
+<!-- from cdn -->
+<script src="https://unpkg.com/@material-tailwind/html@latest/scripts/input.js"></script>
+```

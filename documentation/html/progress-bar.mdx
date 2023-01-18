@@ -1,0 +1,347 @@
+---
+title: Tailwind CSS Progress - Material Tailwind
+description: Customise your web projects with our easy-to-use Progress component for Tailwind CSS using Material Design guidelines.
+navigation:
+  [
+    "progress",
+    "progress-variation",
+    "progress-styles",
+    "progress-gradient",
+    required-script,
+  ]
+github: progress-bar
+prev: popover
+next: radio-button
+---
+
+# Tailwind CSS Progress
+
+Our Tailwind CSS progress component can be used to show a user how far along he is in a process. The progress can be determinate or indeterminate. Use the Progress Bar to show an ongoing process that takes a noticeable time to finish.
+
+Below we are presenting our examples of progress components that you can use in your Tailwind CSS project. They come in different styles so you can adapt them easily to your needs.
+
+<br />
+
+<ComponentDemo id="progress">
+  <div className="w-full">
+    <span className="text-blue-gray-500 text-sm font-normal leading-6">
+      {`50%`}
+    </span>
+    <div className="progress">
+      <div className="progress-bar progress-pink" data-value="50"></div>
+    </div>
+  </div>
+</ComponentDemo>
+
+```html
+<div class="w-full">
+  <span class="text-blue-gray-500 text-sm font-normal leading-6">50%</span>
+  <div class="progress">
+    <div class="progress-bar progress-pink" data-value="50"></div>
+  </div>
+</div>
+```
+
+---
+
+## Progress Variation
+
+Use this examples to create simple progress components.
+
+<ComponentDemo id="progress-variation">
+  <div className="w-full">
+    <span className="text-blue-gray-500 text-sm font-normal leading-6">
+      {`50%`}
+    </span>
+    <div className="progress">
+      <div className="progress-bar progress-pink" data-value="50"></div>
+    </div>
+  </div>
+  <div className="mb-4 w-full">
+    <span className="text-blue-gray-500 text-sm font-normal leading-6">
+      {`50%`}
+    </span>
+    <div className="progress">
+      <div
+        className="progress-bar progress-stripped progress-blue"
+        data-value="50"
+      ></div>
+    </div>
+  </div>
+  <div className="w-full">
+    <div className="progress" percentage="true">
+      <div className="progress-bar progress-pink" data-value="50">
+        <span>50%</span>
+      </div>
+    </div>
+  </div>
+</ComponentDemo>
+
+```html
+<div class="w-full">
+  <span class="text-blue-gray-500 text-sm font-normal leading-6">50%</span>
+  <div class="progress">
+    <div class="progress-bar progress-pink" data-value="50"></div>
+  </div>
+</div>
+<div class="mb-4 w-full">
+  <span class="text-blue-gray-500 text-sm font-normal leading-6">50%</span>
+  <div class="progress">
+    <div
+      class="progress-bar progress-stripped progress-blue"
+      data-value="50"
+    ></div>
+  </div>
+</div>
+<div class="w-full">
+  <div class="progress" percentage="true">
+    <div class="progress-bar progress-pink" data-value="50">
+      <span>50%</span>
+    </div>
+  </div>
+</div>
+```
+
+---
+
+## Progress Styles
+
+Use this example to create progress components on different colors.
+
+<ComponentDemo id="progress">
+  <div className="w-full">
+    <span className="text-blue-gray-500 text-sm font-normal leading-6">
+      {`50%`}
+    </span>
+    <div className="progress">
+      <div className="progress-bar progress-pink" data-value="50"></div>
+    </div>
+  </div>
+  <div className="w-full">
+    <span className="text-blue-gray-500 text-sm font-normal leading-6">
+      {`50%`}
+    </span>
+    <div className="progress">
+      <div className="progress-bar progress-blue" data-value="50"></div>
+    </div>
+  </div>
+  <div className="w-full">
+    <span className="text-blue-gray-500 text-sm font-normal leading-6">
+      {`50%`}
+    </span>
+    <div className="progress">
+      <div className="progress-bar progress-red" data-value="50"></div>
+    </div>
+  </div>
+  <div className="w-full">
+    <span className="text-blue-gray-500 text-sm font-normal leading-6">
+      {`50%`}
+    </span>
+    <div className="progress">
+      <div className="progress-bar progress-green" data-value="50"></div>
+    </div>
+  </div>
+  <div className="w-full">
+    <span className="text-blue-gray-500 text-sm font-normal leading-6">
+      {`50%`}
+    </span>
+    <div className="progress">
+      <div className="progress-bar progress-orange" data-value="50"></div>
+    </div>
+  </div>
+  <div className="w-full">
+    <span className="text-blue-gray-500 text-sm font-normal leading-6">
+      {`50%`}
+    </span>
+    <div className="progress">
+      <div className="progress-bar progress-dark" data-value="50"></div>
+    </div>
+  </div>
+</ComponentDemo>
+
+```html
+<div class="w-full">
+  <span class="text-blue-gray-500 text-sm font-normal leading-6">50%</span>
+  <div class="progress">
+    <div class="progress-bar progress-pink" data-value="50"></div>
+  </div>
+</div>
+<div class="w-full">
+  <span class="text-blue-gray-500 text-sm font-normal leading-6">50%</span>
+  <div class="progress">
+    <div class="progress-bar progress-blue" data-value="50"></div>
+  </div>
+</div>
+<div class="w-full">
+  <span class="text-blue-gray-500 text-sm font-normal leading-6">50%</span>
+  <div class="progress">
+    <div class="progress-bar progress-red" data-value="50"></div>
+  </div>
+</div>
+<div class="w-full">
+  <span class="text-blue-gray-500 text-sm font-normal leading-6">50%</span>
+  <div class="progress">
+    <div class="progress-bar progress-green" data-value="50"></div>
+  </div>
+</div>
+<div class="w-full">
+  <span class="text-blue-gray-500 text-sm font-normal leading-6">50%</span>
+  <div class="progress">
+    <div class="progress-bar progress-orange" data-value="50"></div>
+  </div>
+</div>
+<div class="w-full">
+  <span class="text-blue-gray-500 text-sm font-normal leading-6">50%</span>
+  <div class="progress">
+    <div class="progress-bar progress-dark" data-value="50"></div>
+  </div>
+</div>
+```
+
+---
+
+## Progress with gradient
+
+Use this example to create beautiful progress components with gradients.
+
+<ComponentDemo id="progress-gradient">
+  <div className="w-full">
+    <span className="text-blue-gray-500 text-sm font-normal leading-6">
+      {`50%`}
+    </span>
+    <div className="progress">
+      <div
+        className="progress-bar progress-pink progress-gradient"
+        data-value="50"
+      ></div>
+    </div>
+  </div>
+  <div className="w-full">
+    <span className="text-blue-gray-500 text-sm font-normal leading-6">
+      {`50%`}
+    </span>
+    <div className="progress">
+      <div
+        className="progress-bar progress-gradient progress-blue"
+        data-value="50"
+      ></div>
+    </div>
+  </div>
+  <div className="w-full">
+    <span className="text-blue-gray-500 text-sm font-normal leading-6">
+      {`50%`}
+    </span>
+    <div className="progress">
+      <div
+        className="progress-bar progress-gradient progress-red"
+        data-value="50"
+      ></div>
+    </div>
+  </div>
+  <div className="w-full">
+    <span className="text-blue-gray-500 text-sm font-normal leading-6">
+      {`50%`}
+    </span>
+    <div className="progress">
+      <div
+        className="progress-bar progress-gradient progress-green"
+        data-value="50"
+      ></div>
+    </div>
+  </div>
+  <div className="w-full">
+    <span className="text-blue-gray-500 text-sm font-normal leading-6">
+      {`50%`}
+    </span>
+    <div className="progress">
+      <div
+        className="progress-bar progress-gradient progress-orange"
+        data-value="50"
+      ></div>
+    </div>
+  </div>
+  <div className="w-full">
+    <span className="text-blue-gray-500 text-sm font-normal leading-6">
+      {`50%`}
+    </span>
+    <div className="progress">
+      <div
+        className="progress-bar progress-gradient progress-dark"
+        data-value="50"
+      ></div>
+    </div>
+  </div>
+</ComponentDemo>
+
+```html
+<div class="w-full">
+  <span class="text-blue-gray-500 text-sm font-normal leading-6">50%</span>
+  <div class="progress">
+    <div
+      class="progress-bar progress-pink progress-gradient"
+      data-value="50"
+    ></div>
+  </div>
+</div>
+<div class="w-full">
+  <span class="text-blue-gray-500 text-sm font-normal leading-6">50%</span>
+  <div class="progress">
+    <div
+      class="progress-bar progress-gradient progress-blue"
+      data-value="50"
+    ></div>
+  </div>
+</div>
+<div class="w-full">
+  <span class="text-blue-gray-500 text-sm font-normal leading-6">50%</span>
+  <div class="progress">
+    <div
+      class="progress-bar progress-gradient progress-red"
+      data-value="50"
+    ></div>
+  </div>
+</div>
+<div class="w-full">
+  <span class="text-blue-gray-500 text-sm font-normal leading-6">50%</span>
+  <div class="progress">
+    <div
+      class="progress-bar progress-gradient progress-green"
+      data-value="50"
+    ></div>
+  </div>
+</div>
+<div class="w-full">
+  <span class="text-blue-gray-500 text-sm font-normal leading-6">50%</span>
+  <div class="progress">
+    <div
+      class="progress-bar progress-gradient progress-orange"
+      data-value="50"
+    ></div>
+  </div>
+</div>
+<div class="w-full">
+  <span class="text-blue-gray-500 text-sm font-normal leading-6">50%</span>
+  <div class="progress">
+    <div
+      class="progress-bar progress-gradient progress-dark"
+      data-value="50"
+    ></div>
+  </div>
+</div>
+```
+
+---
+
+## Required Scrips
+
+<span id="required-script" className="scroll-mt-56" />
+
+The progress component needs a required script files to work, you just need to add the below script file to the bottom of your html file.
+
+```html
+<!-- from node_modules -->
+<script src="node_modules/@material-tailwind/html/scripts/progress.js"></script>
+
+<!-- from cdn -->
+<script src="https://unpkg.com/@material-tailwind/html@latest/scripts/progress.js"></script>
+```

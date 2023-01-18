@@ -1,0 +1,320 @@
+---
+title: Tailwind CSS Menu - Material Tailwind
+description: Customise your web projects with our easy-to-use Menu component for Tailwind CSS using Material Design guidelines.
+navigation: ["menu", "menu-right", "nested-menu", "required-script"]
+github: menu
+prev: input
+next: navbar
+---
+
+# Tailwind CSS Menu
+
+Use our responsive Tailwind CSS vertical menu, that can take the user anywhere on your web app!
+
+A menu displays a list of choices on temporary surfaces. It appears when users interact with a button, action, or other control. The menu also ensures a consistent and predictable user experience by adhering to an established set of principles
+
+See below our menu example that you can use in your Tailwind CSS project. The example comes in different colors and styles, so you can adapt them easily to your needs.
+
+<br />
+
+<ComponentDemo id="menu">
+  <div className="menu">
+    <button
+      className="button button-pink"
+      menu-trigger="true"
+      aria-expanded="true"
+      data-ripple-light="true"
+    >
+      {`menu`}
+    </button>
+    <ul className="dropdown-menu p-2">
+      <li className="mb-2">
+        <a className="menu-item" href="#">
+          <div className="flex items-center py-2">
+            <span className="my-auto ml-2 normal-case">Menu Item 1</span>
+          </div>
+        </a>
+      </li>
+      <li className="mb-2">
+        <a className="menu-item" href="#">
+          <div className="flex items-center py-2">
+            <span className="my-auto ml-2 normal-case">Menu Item 2</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a className="menu-item" href="#">
+          <div className="flex items-center py-2">
+            <span className="my-auto ml-2 normal-case">Menu Item 3</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</ComponentDemo>
+
+```html
+<div class="menu">
+  <button
+    class="button button-pink"
+    menu-trigger="true"
+    aria-expanded="true"
+    data-ripple-light="true"
+  >
+    menu
+  </button>
+  <ul class="dropdown-menu p-2">
+    <li class="mb-2">
+      <a class="menu-item" href="#">
+        <div class="flex items-center py-1">
+          <span class="my-auto ml-2 normal-case">Menu Item 1</span>
+        </div>
+      </a>
+    </li>
+    <li class="mb-2">
+      <a class="menu-item" href="#">
+        <div class="flex items-center py-1">
+          <span class="my-auto ml-2 normal-case">Menu Item 2</span>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a class="menu-item" href="#">
+        <div class="flex items-center py-1">
+          <span class="my-auto ml-2 normal-case">Menu Item 3</span>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+```
+
+---
+
+## Menu Right
+
+Use this example to create a simple menu positioned in the right side of the screen.
+
+<ComponentDemo id="menu right">
+  <div className="menu ml-auto">
+    <button
+      className="button button-cyan"
+      menu-trigger="true"
+      aria-expanded="true"
+      data-ripple-light="true"
+    >
+      {`menu right`}
+    </button>
+    <ul className="dropdown-menu menu-right p-2">
+      <li className="mb-2">
+        <a className="menu-item" href="#">
+          <div className="flex items-center py-1">
+            <span className="material-icons text-xl">email</span>
+            <span className="my-auto ml-2 normal-case">Check new messages</span>
+          </div>
+        </a>
+      </li>
+      <li className="mb-2">
+        <a className="menu-item" href="#">
+          <div className="flex items-center py-1">
+            <span className="material-icons text-xl">podcasts</span>
+            <span className="my-auto ml-2 normal-case">
+              {`Manage podcast session`}
+            </span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a className="menu-item" href="#">
+          <div className="flex items-center py-1">
+            <span className="material-icons text-xl">shopping_cart</span>
+            <span className="my-auto ml-2 normal-case">
+              {`Payment successfully completed`}
+            </span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</ComponentDemo>
+
+```html
+<div class="menu ml-auto">
+  <button
+    class="button button-cyan"
+    menu-trigger="true"
+    aria-expanded="true"
+    data-ripple-light="true"
+  >
+    menu right
+  </button>
+  <ul class="dropdown-menu menu-right p-2">
+    <li class="mb-2">
+      <a class="menu-item" href="#">
+        <div class="flex items-center py-1">
+          <span class="material-icons text-xl">email</span>
+          <span class="my-auto ml-2 normal-case">Check new messages</span>
+        </div>
+      </a>
+    </li>
+    <li class="mb-2">
+      <a class="menu-item" href="#">
+        <div class="flex items-center py-1">
+          <span class="material-icons text-xl">podcasts</span>
+          <span class="my-auto ml-2 normal-case">Manage podcast session</span>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a class="menu-item" href="#">
+        <div class="flex items-center py-1">
+          <span class="material-icons text-xl">shopping_cart</span>
+          <span class="my-auto ml-2 normal-case"
+            >Payment successfully completed</span
+          >
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+```
+
+---
+
+## Nested Menu
+
+Help users navigate easier your page with this nested menu example that will help you with content organization.
+
+<ComponentDemo id="nested menu">
+  <div className="menu">
+    <button
+      className="button button-red"
+      menu-trigger="true"
+      aria-expanded="true"
+      data-ripple-light="true"
+    >
+      {`menu`}
+    </button>
+    <ul className="dropdown-menu p-2">
+      <li className="mb-2">
+        <a className="menu-item" href="#">
+          <div className="flex items-center py-1">
+            <span className="my-auto ml-2 normal-case">Menu Item 1</span>
+          </div>
+        </a>
+      </li>
+      <li className="mb-2">
+        <a className="menu-item" href="#tailwind-menu">
+          <div className="flex items-center py-1">
+            <span className="my-auto ml-2 normal-case">Nested Menu</span>
+          </div>
+        </a>
+        <ul className="dropdown-menu p-2">
+          <li className="mb-2">
+            <a className="menu-item" href="#">
+              <div className="flex items-center py-1">
+                <span className="my-auto ml-2 normal-case">Nested Item 1</span>
+              </div>
+            </a>
+          </li>
+          <li className="mb-2">
+            <a className="menu-item" href="#">
+              <div className="flex items-center py-1">
+                <span className="my-auto ml-2 normal-case">Nested Item 2</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a className="menu-item" href="#">
+              <div className="flex items-center py-1">
+                <span className="my-auto ml-2 normal-case">Nested Item 3</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a className="menu-item" href="#">
+          <div className="flex items-center py-1">
+            <span className="my-auto ml-2 normal-case">Menu Item 2</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</ComponentDemo>
+
+```html
+<div class="menu">
+  <button
+    class="button button-red"
+    menu-trigger="true"
+    aria-expanded="true"
+    data-ripple-light="true"
+  >
+    menu
+  </button>
+  <ul class="dropdown-menu p-2">
+    <li class="mb-2">
+      <a class="menu-item" href="#">
+        <div class="flex items-center py-1">
+          <span class="my-auto ml-2 normal-case">Menu Item 1</span>
+        </div>
+      </a>
+    </li>
+    <li class="mb-2">
+      <a class="menu-item" href="#">
+        <div class="flex items-center py-1">
+          <span class="my-auto ml-2 normal-case">Nested Menu</span>
+        </div>
+      </a>
+      <ul class="dropdown-menu p-2">
+        <li class="mb-2">
+          <a class="menu-item" href="#">
+            <div class="flex items-center py-1">
+              <span class="my-auto ml-2 normal-case">Nested Item 1</span>
+            </div>
+          </a>
+        </li>
+        <li class="mb-2">
+          <a class="menu-item" href="#">
+            <div class="flex items-center py-1">
+              <span class="my-auto ml-2 normal-case">Nested Item 2</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="menu-item" href="#">
+            <div class="flex items-center py-1">
+              <span class="my-auto ml-2 normal-case">Nested Item 3</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a class="menu-item" href="#">
+        <div class="flex items-center py-1">
+          <span class="my-auto ml-2 normal-case">Menu Item 2</span>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+```
+
+---
+
+## Required Scrips
+
+<span id="required-script" className="scroll-mt-56" />
+
+The menu component needs a required script file to work, you just need to add the below script file to the bottom of your html file.
+
+```html
+<!-- from node_modules -->
+<script src="node_modules/@material-tailwind/html/scripts/menu.js"></script>
+
+<!-- from cdn -->
+<script src="https://unpkg.com/@material-tailwind/html@latest/scripts/menu.js"></script>
+```
